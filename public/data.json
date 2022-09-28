@@ -1,0 +1,44 @@
+[
+    {
+      "id": "63346a5429321c61bdf4b108",
+      "picture": "https://i.ibb.co/QcJFxj3/dumble.jpg",
+      "Time": 30,
+      "eyeColor": "green",
+      "name": "Dumble"
+    },
+    {
+      "id": "63346a544da0decf6abce56d",
+      "picture": "https://i.ibb.co/56QhjLk/leg.jpg",
+      "Time": 40,
+      "eyeColor": "green",
+      "name": "Leg stretching exercise"
+    },
+    {
+      "id": "63346a545aed0444816b791d",
+      "picture": "https://i.ibb.co/VvDLSSN/running.jpg",
+      "Time": 24,
+      "eyeColor": "green",
+      "name": "Running Exercise"
+    },
+    {
+      "id": "63346a54babfae647bd88302",
+      "picture": "https://i.ibb.co/KFrCNdb/belly.jpg",
+      "Time": 38,
+      "eyeColor": "brown",
+      "name": "Belly Exercise"
+    },
+    {
+      "id": "63346a541b31599e38794562",
+      "picture": "https://i.ibb.co/1mpm3Yd/jumping.jpg",
+      "Time": 26,
+      "eyeColor": "brown",
+      "name": "Jumping Exercise"
+    },
+    {
+        "id": "633470b291a355ffde2eccb9",
+        "picture": "https://i.ibb.co/k2c631M/bike.jpg",
+        "Time": 29,
+        "eyeColor": "blue",
+        "name": "Bike Exercise"
+      }
+  ]
