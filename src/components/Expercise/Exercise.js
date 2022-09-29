@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import './Exercise.css';
 import logo from '../../images/PROPIC_n.jpg'
+import AddBreak from '../AddBreak/AddBreak';
 
 const Exercise = () => {
 const [products,setProducts] = useState([]);
 const [time,setTime] = useState(0);
+const [sec, setSec] = useState(0)
 useEffect(()=>{
     fetch('data.json')
     .then(res => res.json())
@@ -15,6 +17,12 @@ useEffect(()=>{
  const handleTime=(x)=>{
     setTime((preTime)=>(preTime+x))
 
+
+ }
+
+ const handleAddBreak =(x) =>{
+    setSec(x)
+    localStorage.setItem('break',JSON.stringify(sec))
 
  }
 
@@ -40,12 +48,24 @@ useEffect(()=>{
                 
                 </div>
                 <div className='customer-data'>
-                <h5>Weight: 75 kg</h5>
+                <h5>Weight: 75 kg </h5> 
                 <h5>Height : 175 cm</h5>
                 <h5>Age : 37 year</h5>
 
-                <h1>{time}</h1>
+                
 
+            </div>
+            <div className='exercise-time'>
+                 <h3>Exercise Details</h3>   
+             <h6>Exercise Time :{time} s</h6>
+            </div>
+            <div>
+                
+                <AddBreak 
+                
+                 sec={sec}
+                handleAddBreak ={handleAddBreak}
+                ></AddBreak>
             </div>
                
             </div>

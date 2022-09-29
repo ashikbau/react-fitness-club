@@ -1,0 +1,13 @@
+.add-break{
+    border: 2px solid grey;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.break-time{
+border: 2px solid gray;
+padding: 10px;
+background-color: aquamarine;
+margin: 15px;
+}
+

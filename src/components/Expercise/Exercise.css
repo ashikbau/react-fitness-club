@@ -11,10 +11,7 @@
     margin: 100px 50px;
 
 }
-.cart-container{
-    
-    
-}
+
 .cart-container img{
     width: 80px;
     height: 90px;
@@ -22,3 +19,14 @@
 .cart-info{
     padding-left: 7px;
 }
+.exercise-time{
+    margin-top: 35px;
+    background-color: aqua;
+    border: 1px solid aquamarine;
+}
+.customer-data h5{
+    margin-right: 5px;
+}
+
+   
+    
