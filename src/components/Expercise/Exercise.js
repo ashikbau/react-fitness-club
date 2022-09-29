@@ -10,6 +10,7 @@ const Exercise = () => {
 const [products,setProducts] = useState([]);
 const [time,setTime] = useState(0);
 const [sec, setSec] = useState(0)
+// load data from fake data
 useEffect(()=>{
     fetch('data.json')
     .then(res => res.json())
@@ -24,10 +25,11 @@ useEffect(()=>{
 
  const handleAddBreak =(x) =>{
     setSec(x)
-    const cart ={};
-    cart[cart] = sec;
-    localStorage.setItem('break',JSON.stringify(cart))
-
+   
+        localStorage.setItem('time',x)
+       
+   
+    
  }
 
  const toastActivate = ()=>{

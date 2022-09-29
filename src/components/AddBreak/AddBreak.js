@@ -4,6 +4,10 @@ const AddBreak = (props) => {
     const {handleAddBreak,sec} = props
     const {toastActivate} = props
    
+    
+
+    let breaktime=localStorage.getItem('time')
+   
 
     return (
         <div >
@@ -14,7 +18,7 @@ const AddBreak = (props) => {
             <button onClick={()=>handleAddBreak(40)}>40s</button>
             </div> 
              <div className="break-time">
-                <h5>Break time :{sec} </h5>
+                <h5>Break time :{breaktime} </h5>
 
             </div> 
             <div className='activity-btn'>
