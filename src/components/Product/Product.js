@@ -7,7 +7,9 @@ const Product = (props) => {
    
     
     return (
+       
         <div className='product'>
+            
             <img src={picture} alt="" />
             <div className="product-info">
                 <h3>{name}</h3>
@@ -16,6 +18,7 @@ const Product = (props) => {
             </div>
             <button onClick={()=>props.handleTime(Time)}  className='btn-cart'>Add To List</button>
         </div>
+       
     );
 };
 

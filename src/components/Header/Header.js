@@ -11,8 +11,7 @@ const Header = () => {
         <div className='header-info'>
             <h3>Fitness Club</h3>
         </div>
-
-       </nav>
+        </nav>
     );
 };
 

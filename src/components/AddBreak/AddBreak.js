@@ -18,7 +18,7 @@ const AddBreak = (props) => {
             <button onClick={()=>handleAddBreak(40)}>40s</button>
             </div> 
              <div className="break-time">
-                <h5>Break time :{breaktime} </h5>
+                <h5>Break time :{breaktime} s </h5>
 
             </div> 
             <div className='activity-btn'>

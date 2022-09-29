@@ -45,13 +45,15 @@ useEffect(()=>{
 
     return (
     <div className='exercise-container'>
-            <div className='product-container'>
-                {
+        <div className='product-container'>
+            {
                     products.map(product => <Product key = {product.id}
                         product ={product}  handleTime={handleTime}
                     ></Product>)
                 }
+                
                 </div>
+                
             <div className="cart-container">
                 <div className='personal-info'>
                 <img src={logo} alt=""></img> 
