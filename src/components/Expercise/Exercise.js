@@ -16,13 +16,13 @@ useEffect(()=>{
     .then(res => res.json())
     .then(data => setProducts(data))
 },[])
-
+// Exercise time function
  const handleTime=(x)=>{
     setTime((preTime)=>(preTime+x))
 
 
  }
-
+// Break a time function
  const handleAddBreak =(x) =>{
     setSec(x)
    
@@ -31,6 +31,7 @@ useEffect(()=>{
    
     
  }
+//  toaster function added
 
  const toastActivate = ()=>{
     Swal.fire(
@@ -40,10 +41,7 @@ useEffect(()=>{
       )
  }
 
-
-
-
-    return (
+ return (
     <div className='exercise-container'>
         <div className='product-container'>
             {
@@ -67,19 +65,15 @@ useEffect(()=>{
                 <h5>Weight: 75 kg </h5> 
                 <h5>Height : 175 cm</h5>
                 <h5>Age : 37 year</h5>
+                 </div>
 
-                
-
-            </div>
             <div className='exercise-time'>
                  <h3>Exercise Details</h3>   
              <h6>Exercise Time :{time} s</h6>
             </div>
             <div>
-                
                 <AddBreak 
-                
-                 sec={sec}
+                sec={sec}
                 handleAddBreak ={handleAddBreak}
                 toastActivate ={toastActivate}
                 ></AddBreak>
