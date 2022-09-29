@@ -16,6 +16,10 @@
     width: 80px;
     height: 90px;
 }
+.cart-container{
+    margin-top: 10px;
+    background-color: aqua;
+}
 .cart-info{
     padding-left: 7px;
 }
@@ -26,7 +30,13 @@
 }
 .customer-data h5{
     margin-right: 5px;
+    border: 2px solid gray;
+    background-color: aqua;
 }
-
+@media screen and (max-width:560px){
+    .product-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
    
     

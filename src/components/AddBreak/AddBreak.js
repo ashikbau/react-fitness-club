@@ -17,7 +17,7 @@ const AddBreak = (props) => {
                 <h5>Break time :{sec} </h5>
 
             </div> 
-            <div activity-btn>
+            <div className='activity-btn'>
                 <button onClick={()=>toastActivate()}> Activity Completed</button>
             </div>
 

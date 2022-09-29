@@ -24,7 +24,9 @@ useEffect(()=>{
 
  const handleAddBreak =(x) =>{
     setSec(x)
-    localStorage.setItem('break',JSON.stringify(sec))
+    const cart ={};
+    cart[cart] = sec;
+    localStorage.setItem('break',JSON.stringify(cart))
 
  }
 
