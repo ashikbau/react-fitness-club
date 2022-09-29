@@ -2,6 +2,7 @@ import React from 'react';
 import './AddBreak.css'
 const AddBreak = (props) => {
     const {handleAddBreak,sec} = props
+    const {toastActivate} = props
    
 
     return (
@@ -17,7 +18,7 @@ const AddBreak = (props) => {
 
             </div> 
             <div activity-btn>
-                <button> Activity Completed</button>
+                <button onClick={()=>toastActivate()}> Activity Completed</button>
             </div>
 
             

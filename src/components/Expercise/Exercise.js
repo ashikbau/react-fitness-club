@@ -3,6 +3,8 @@ import Product from '../Product/Product';
 import './Exercise.css';
 import logo from '../../images/PROPIC_n.jpg'
 import AddBreak from '../AddBreak/AddBreak';
+import Swal from 'sweetalert2'
+import QuestionAnswe from '../QuestionAnswer/QuestionAnswe';
 
 const Exercise = () => {
 const [products,setProducts] = useState([]);
@@ -24,6 +26,14 @@ useEffect(()=>{
     setSec(x)
     localStorage.setItem('break',JSON.stringify(sec))
 
+ }
+
+ const toastActivate = ()=>{
+    Swal.fire(
+        'Good job!',
+        'You completed the exercise today!',
+        'success'
+      )
  }
 
 
@@ -65,9 +75,14 @@ useEffect(()=>{
                 
                  sec={sec}
                 handleAddBreak ={handleAddBreak}
+                toastActivate ={toastActivate}
                 ></AddBreak>
             </div>
                
+            </div>
+            <div >
+                <QuestionAnswe></QuestionAnswe>
+
             </div>
            
             </div>
